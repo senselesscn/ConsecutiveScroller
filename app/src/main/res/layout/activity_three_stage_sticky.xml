@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollerLayout"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <FrameLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#FF5722"
+        app:layout_isSticky="true"
+        app:layout_stickyOffset="-250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Three-Stage Header"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:paddingBottom="10dp"
+            android:text="Scroll Up to Collapse"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.donkingliang.consecutivescroller.ConsecutiveScrollerLayout>

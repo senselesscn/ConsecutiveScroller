@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.donkingliang.consecutivescrollerdemo">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,16 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConsecutiveActivity"/>
-        <activity android:name=".ScrollChildActivity"/>
-        <activity android:name=".StickyActivity" />
-        <activity android:name=".SinkStickyActivity" />
-        <activity android:name=".SampleActivity" />
-        <activity android:name=".ViewPagerActivity" />
-        <activity android:name=".ViewPager2Activity" />
-        <activity android:name=".PermanentStickyActivity" />
-        <activity android:name=".FragmentActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ConsecutiveActivity" android:exported="false"/>
+        <activity android:name=".ScrollChildActivity" android:exported="false"/>
+        <activity android:name=".StickyActivity" android:exported="false"/>
+        <activity android:name=".SinkStickyActivity" android:exported="false"/>
+        <activity android:name=".SampleActivity" android:exported="false"/>
+        <activity android:name=".ViewPagerActivity" android:exported="false"/>
+        <activity android:name=".ViewPager2Activity" android:exported="false"/>
+        <activity android:name=".PermanentStickyActivity" android:exported="false"/>
+        <activity android:name=".FragmentActivity" android:exported="false"/>
+        <activity android:name=".ThreeStageStickyActivity" android:exported="false"/>
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

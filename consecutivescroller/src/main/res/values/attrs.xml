@@ -12,6 +12,7 @@
             <enum name="CENTER" value="3" />
         </attr>
         <attr name="layout_scrollChild" format="reference" />
+        <attr name="layout_stickyOffset" format="dimension" />
     </declare-styleable>
     <declare-styleable name="ConsecutiveScrollerLayout">
         <attr name="isPermanent" format="boolean" />

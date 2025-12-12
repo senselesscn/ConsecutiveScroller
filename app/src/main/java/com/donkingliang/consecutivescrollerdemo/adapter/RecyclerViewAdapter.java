@@ -20,7 +20,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private Context context;
     private String text;
-    private int count = 30;
+    private int count = 100;
 
     public RecyclerViewAdapter(Context context, String text) {
         this.context = context;
